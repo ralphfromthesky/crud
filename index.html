@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        margin: 10%;
+        height: 50vh;
+        width: 80vw;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 20px 20px 47px #bebebe,
+            -20px -20px 47px #ffffff;
+    }
+
+    .rights {
+        overflow: hidden;
+        height: 47vh;
+        width: 65%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 40px;
+        background: #ffffff;
+        box-shadow: 5px 5px 10px #707070,
+            -5px -5px 10px #ffffff;
+
+    }
+
+    .right {
+        display: flex;
+
+    }
+
+    .left {
+        padding: 10px;
+    }
+
+    .span {
+        padding-right: 50%;
+        color: #fb0b0b;
+    }
+
+    button {
+        width: 50%;
+        height: 50px;
+        transition: .6s;
+        margin-top: 5%;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 5px 5px 10px #707070,
+            -5px -5px 10px #ffffff;
+    }
+
+    button:hover {
+        transform: translateY(-10px);
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: 20px 20px 47px #bebebe,
+            -20px -20px 47px #ffffff;
+    }
+
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    i {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .6s;
+    }
+
+    i:hover {
+        transform: translateY(-10px);
+
+    }
+
+    #msg {
+        color: red;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    textarea {
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 5px 5px 10px #707070,
+            -5px -5px 10px #ffffff;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+</style>
+
+<body>
+
+    <div class="main" id="post">
+        <div class="left" id="left">
+            <h1 style="text-align: center;">WEB APPS</h1>
+            <form action="" id="form">
+                <textarea name="" id="input" cols="30" rows="10"></textarea>
+                <div id="msg"></div>
+                <button class="btn" id="btn" type="">POST</button>
+
+            </form>
+
+        </div>
+        <div class="rights" id="rights">
+            <div class="right" id="right">
+                <p>Ralph</p>
+                <span>
+                    <i onClick="editPost(this)" class='bx bx-edit-alt'></i>
+                    <i onClick="deletePost(this)" class='bx bx-trash' style='color:#fb0b0b'></i>
+                </span>
+            </div>
+            <div class="right" id="right">
+                <p>Rigor</p>
+                <span>
+                    <i onClick="editPost(this)" class='bx bx-edit-alt'></i>
+                    <i onClick="deletePost(this)" class='bx bx-trash' style='color:#fb0b0b'></i>
+                </span>
+            </div>
+            <div class="right" id="right">
+                <p>Santolorin</p>
+                <span>
+                    <i onClick="editPost(this)" class='bx bx-edit-alt'></i>
+                    <i onClick="deletePost(this)" class='bx bx-trash' style='color:#fb0b0b'></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
